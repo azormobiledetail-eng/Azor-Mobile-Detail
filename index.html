@@ -3,63 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Azor Mobile Detail | By Appointment Only</title>
-  <meta name="description" content="Azor Mobile Detail offers premium mobile car detailing services. By appointment only. Book today." />
-  <link rel="stylesheet" href="style.css" />
+  <title>Azor Mobile Detail | Mobile Car Detailing Near You</title>
+  <meta name="description" content="Azor Mobile Detail offers professional mobile car detailing, interior & exterior detailing, paint correction, and ceramic coating. Book online today." />
+  <meta name="keywords" content="mobile car detailing, car detailing near me, ceramic coating, interior detailing, exterior detailing" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Azor Mobile Detail" />
+  <meta property="og:description" content="Premium mobile car detailing. Easy online booking." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #0f0f0f; color: #ffffff; }
+    a { color: #e10600; text-decoration: none; }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2') center/cover no-repeat;
+      padding: 90px 20px;
+      text-align: center;
+    }
+
+    header h1 { font-size: 42px; margin-bottom: 10px; }
+    header p { font-size: 18px; margin-bottom: 25px; }
+
+    .btn { background: #e10600; color: #fff; padding: 16px 34px; border-radius: 8px; font-weight: bold; display: inline-block; }
+
+    section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+
+    .card { background: #1a1a1a; padding: 22px; border-radius: 12px; text-align: center; }
+
+    .booking { background: #1a1a1a; padding: 30px; border-radius: 12px; }
+
+    iframe { width: 100%; min-height: 650px; border: none; border-radius: 12px; }
+
+    footer { background: #000; padding: 30px 20px; text-align: center; font-size: 14px; }
+
+    /* Sticky Call Button */
+    .call-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #e10600;
+      color: #fff;
+      padding: 16px 22px;
+      border-radius: 50px;
+      font-weight: bold;
+      box-shadow: 0 8px 20px rgba(0,0,0,.4);
+      z-index: 999;
+    }
+
+    /* Mobile Optimization */
+    @media (max-width: 768px) {
+      header h1 { font-size: 32px; }
+      header p { font-size: 16px; }
+      section { padding: 45px 16px; }
+    }
+  </style>
 </head>
 <body>
 
 <header>
   <h1>Azor Mobile Detail</h1>
-  <p>Premium Mobile Car Detailing<br>By Appointment Only</p>
-  <a href="#book" class="btn">Book Your Appointment</a>
+  <p>Premium Mobile Car Detailing<br>Serving Your Area</p>
+  <a href="#book" class="btn">Book Online</a>
 </header>
 
 <section>
-  <h2 class="center">Our Services</h2>
+  <h2 style="text-align:center;">Our Services</h2>
   <div class="services">
-    <div class="card">
-      <h3>Full Interior Detail</h3>
-      <p>Deep cleaning, vacuum, shampoo, and interior protection.</p>
-    </div>
-    <div class="card">
-      <h3>Exterior Detail</h3>
-      <p>Hand wash, wax, tire shine, and exterior protection.</p>
-    </div>
-    <div class="card">
-      <h3>Paint Correction</h3>
-      <p>Remove swirls, scratches, and restore shine.</p>
-    </div>
-    <div class="card">
-      <h3>Ceramic Coating</h3>
-      <p>Long-lasting paint protection and gloss.</p>
-    </div>
+    <div class="card"><h3>Full Interior Detail</h3><p>Deep cleaning, shampoo, and protection.</p></div>
+    <div class="card"><h3>Exterior Detail</h3><p>Hand wash, wax, tire shine.</p></div>
+    <div class="card"><h3>Paint Correction</h3><p>Remove swirls & scratches.</p></div>
+    <div class="card"><h3>Ceramic Coating</h3><p>Long-lasting gloss & protection.</p></div>
   </div>
 </section>
 
 <section id="book">
-  <h2 class="center">Schedule Your Appointment</h2>
-  <div class="booking-form">
-    <form action="mailto:azormobiledetail@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Full Name" required />
-      <input type="email" name="email" placeholder="Email Address" required />
-      <input type="tel" name="phone" placeholder="Phone Number" required />
-      <select name="service" required>
-        <option value="">Choose Service</option>
-        <option>Full Interior Detail</option>
-        <option>Exterior Detail</option>
-        <option>Paint Correction</option>
-        <option>Ceramic Coating</option>
-      </select>
-      <input type="text" name="date" placeholder="Preferred Date & Time" />
-      <button type="submit">Submit Request</button>
-    </form>
+  <h2 style="text-align:center;">Book Your Appointment</h2>
+  <div class="booking">
+    <iframe src="https://calendly.com/azormobiledetail/book-appt"></iframe>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Azor Mobile Detail. All Rights Reserved.</p>
+  <p>© 2026 Azor Mobile Detail • Mobile Car Detailing</p>
 </footer>
+
+<a class="call-btn" href="tel:15614806786">Call Now</a>
 
 </body>
 </html>
+   
